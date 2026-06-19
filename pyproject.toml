@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recall"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.25.0",
+    "voyageai>=0.2.0",
+    "psycopg2-binary>=2.9",
+    "pydantic-settings>=2.0",
+    "click>=8.1",
+]
+
+[project.scripts]
+recall = "recall.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["recall*"]
