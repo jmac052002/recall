@@ -6,13 +6,13 @@
 CREATE EXTENSION IF NOT EXISTS vector;
 
 -- Semantic memory: embedded facts and important notes
-CREATE TABLE IF NOT EXISTS memory (
+CREATE TABLE IF NOT EXISTS memories (
     id          BIGSERIAL PRIMARY KEY,
     content     TEXT NOT NULL,
     source      TEXT NOT NULL,
     session_id  TEXT,
     embedding   VECTOR(512),
-    created_at  TIMESTAMPZ NOT NULL DEFAULT NOW(),
+    created_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     metadata    JSONB DEFAULT '{}'
 );
 
