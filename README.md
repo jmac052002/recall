@@ -116,8 +116,8 @@ recall ask "What do you remember about me?"
 🚧 Under active development. This is a learning project built incrementally, phase by phase:
 
 - [x] **Phase 1 — Foundation**: project structure, Docker + pgvector, env config
-- [ ] **Phase 2 — Embeddings**: Voyage AI integration, embedding pipeline
-- [ ] **Phase 3 — Memory retrieval**: vector + keyword dual search
+- [x] **Phase 2 — Embeddings**: Voyage AI integration, embedding pipeline
+- [x] **Phase 3 — Memory retrieval**: vector + keyword dual search
 - [ ] **Phase 4 — Agent loop**: full Claude conversation loop with memory injection
 - [ ] **Phase 5 — Memory consolidation**: automatic fact extraction & summarization
 - [ ] **Phase 6 — CLI polish**: session commands, memory inspection tools
